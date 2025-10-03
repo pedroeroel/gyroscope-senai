@@ -9,12 +9,12 @@ const PLAYER_SIZE = 50;
 const ORB_SIZE = 30;
 
 // Tuned Physics/Game Settings
-const SENSITIVITY = 20;
+const SENSITIVITY = -45;
 const DECAY_FACTOR = 0.95;
-const MAX_SPEED = 20;
+const MAX_SPEED = 50;
 const UPDATE_INTERVAL = 16; 
-const GAME_DURATION_SECONDS = 35;
-const WINNING_SCORE = 5;
+const GAME_DURATION_SECONDS = 90;
+const WINNING_SCORE = 25;
 
 // Define types
 interface Position { x: number; y: number; }

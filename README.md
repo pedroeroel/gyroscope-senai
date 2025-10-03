@@ -1,50 +1,68 @@
-# Welcome to your Expo app 👋
+# 🕹️ Gyroscope Controller & Game - Roel
+> Project Status: Concluded ✔️
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+---
 
-## Get started
+### Table of Contents
 
-1. Install dependencies
+* [Project Description](#project-description)
+* [Application Demo](#application-demo)
+* [Features](#-features)
+* [Technologies Used](#️-technologies-used)
+* [How to Run the Project Locally](#️-how-to-run-the-project-locally)
+* [Core Focus: Motion Control](#-core-focus-motion-control-system)
+* [Author](#-author)
 
-   ```bash
-   npm install
-   ```
+---
 
-2. Start the app
+### Project Description
 
-   ```bash
-   npx expo start
-   ```
+<p align="center">
+This project is a mobile application developed with **React Native** and **Expo** that serves as a demonstration and exploration of the device's **Gyroscope sensor**. It features several screens to showcase different applications of motion data, culminating in a simple, fun, motion-controlled game: **Orb Collector**.
+</p>
 
-In the output, you'll find options to open the app in a
+---
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+### Application Demo
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+<p align="center">
+<img src="link-to-your-gif-or-video.gif" alt="App Demonstration" width="300"/>
+</p>
 
-## Get a fresh project
+---
 
-When you're ready, run:
+### 🚀 Features
+
+* **Raw Sensor Reading:** Dedicated screen to display real-time, raw data ($x, y, z$) from the gyroscope, ideal for debugging and understanding motion physics.
+* **Floating Orb Simulation:** A physics simulation where the device's tilt directly controls the movement and velocity of an object (orb) on the screen.
+* **Orb Collector Game:** A time-based game where the user must navigate the player object using the gyroscope to "collect" target orbs before the timer runs out.
+* **Score and High Score Tracking:** Tracks the player's score and determines if they beat the target score.
+* **Sound and Haptics Feedback:** Uses `expo-av` and `expo-haptics` to provide tactile and audio feedback during the game.
+
+---
+
+### 🛠️ Technologies Used
+
+* [**React Native**](https://reactnative.dev/) (Core framework for mobile development)
+* [**Expo**](https://expo.dev/) (Managed workflow, tooling, and build platform)
+* [**TypeScript**](https://www.typescriptlang.org/) (For static typing and reliable code structure)
+* **`expo-sensors`** (API for accessing device gyroscope data)
+* **`expo-router`** (For file-based navigation between demo screens)
+* **`expo-av` & `expo-haptics`** (For media and tactile feedback)
+
+---
+
+### ⚙️ How to Run the Project Locally
 
 ```bash
-npm run reset-project
-```
+# 1. Clone the repository
+$ git clone [link-to-your-repository]
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+# 2. Navigate to the project directory
+$ cd gyroscope-app
 
-## Learn more
+# 3. Install dependencies
+$ npm install
 
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+# 4. Start the development server
+$ npm start
